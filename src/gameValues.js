@@ -30,9 +30,9 @@ export function mapAlternativeSelectionToGameValue(alternativeSelection) {
 
   const alternativeEntries = Object.entries(VALID_ALTERNATIVE_SELECTIONS);
 
-  alternativeEntries.forEach(([canonicalKey, alternativesArray]) => {
+  alternativeEntries.forEach(([gameValueKey, alternativesArray]) => {
     if (alternativesArray.includes(normalizedAlternativeSelection)) {
-      gameValue = canonicalKey;
+      gameValue = gameValueKey;
     }
   });
 
