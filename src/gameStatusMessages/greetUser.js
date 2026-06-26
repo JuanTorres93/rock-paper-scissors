@@ -1,5 +1,5 @@
 export function greetUser() {
-  console.log(`
+  const greeting = `
 ==================================================
 🤖 EVIL AI TAKEOVER INITIATED
 ==================================================
@@ -16,5 +16,7 @@ ROCK • PAPER • SCISSORS.
 Win more rounds than me after 5 battles and humanity survives.
 
 Good luck...
-    `);
+    `;
+
+  console.log(greeting);
 }
